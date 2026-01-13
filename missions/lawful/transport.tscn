@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv8fvdp8qyfm8"]
+
+[ext_resource type="PackedScene" uid="uid://bcu81xupcn363" path="res://missions/lawful/base_lawful_mission.tscn" id="1_2k487"]
+
+[node name="mission" instance=ExtResource("1_2k487")]
+
+[node name="MissionName" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" index="0"]
+text = "MISSION_NAME_TRANSPORT"
+
+[node name="Action" parent="Panel/MarginContainer/VBoxContainer" index="5"]
+text = "TRANSPORT_ADD_ACTION"
+
+[node name="HSeparator2" parent="Panel/MarginContainer/VBoxContainer" index="6"]
+visible = false
+
+[node name="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer" index="7"]
+visible = false
+
+[node name="Option2" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="2"]
+visible = false
+
+[node name="Option4" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="4"]
+visible = false
+
+[node name="AdditionalAction" parent="Panel/MarginContainer/VBoxContainer" index="11"]
+visible = false
+
+[node name="VBoxContainer2" parent="Panel/MarginContainer/VBoxContainer" index="12"]
+visible = true
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="0"]
+visible = false
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option1" index="0"]
+text = "TRANSPORT_FINE"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option1" index="1"]
+text = "TRANSPORT_REWARD_FAIL"
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option1" index="2"]
+visible = false
+
+[node name="Option2" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="2"]
+visible = false
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option3" index="0"]
+text = "MISSION_SUCCESS"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option3" index="1"]
+text = "TRANSPORT_REWARD_SUCCESS"
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option3" index="2"]
+visible = false
+
+[node name="Option4" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="4"]
+visible = false

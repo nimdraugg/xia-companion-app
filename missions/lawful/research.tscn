@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1y8dk3tpp3n4"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_qp5ba"]
+
+[node name="mission" instance=ExtResource("1_qp5ba")]
+
+[node name="MissionName" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" index="0"]
+text = "MISSION_NAME_RESEARCH"
+
+[node name="Action" parent="Panel/MarginContainer/VBoxContainer" index="5"]
+text = "RESEARCH_ADD_ACTION"
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="0"]
+text = "RESEARCH_REWARD_DESC"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option1" index="1"]
+text = "RESEARCH_NO_DATA"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="1"]
+text = "RESEARCH_BAD_DATA"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="1"]
+text = "RESEARCH_GOOD_DATA"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="1"]
+text = "RESEARCH_BR_DATA"

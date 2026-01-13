@@ -1,0 +1,444 @@
+[gd_scene load_steps=2 format=3 uid="uid://db23qgwycicre"]
+
+[ext_resource type="Script" uid="uid://c0dgujajshclp" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_06t4h")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+
+[node name="screen_slider" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="players_menu" type="VBoxContainer" parent="ScrollContainer/screen_slider"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/screen_slider/players_menu"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 80
+
+[node name="players_buttons" type="VBoxContainer" parent="ScrollContainer/screen_slider/players_menu/MarginContainer"]
+layout_mode = 2
+
+[node name="locations_menu" type="VBoxContainer" parent="ScrollContainer/screen_slider"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/screen_slider/locations_menu"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 80
+
+[node name="LocationsScrollContainer" type="ScrollContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LocationRow1" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Blench"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow1"]
+layout_mode = 2
+
+[node name="LocationRow2" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.98, 0.95, 0.75, 1)
+text = "Calakus"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow2"]
+layout_mode = 2
+
+[node name="LocationRow3" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.75, 0.25, 0.75, 1)
+text = "Ferren's Call"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow3"]
+layout_mode = 2
+
+[node name="LocationRow4" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Kiln"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow4"]
+layout_mode = 2
+
+[node name="LocationRow5" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow5"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Neo-Vostok"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow5"]
+layout_mode = 2
+
+[node name="LocationRow6" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow6"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.98, 0.95, 0.75, 1)
+text = "Ruins of Drelmoth"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow6"]
+layout_mode = 2
+
+[node name="LocationRow7" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow7"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+text = "Samara Gate"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow7"]
+layout_mode = 2
+
+[node name="LocationRow8" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow8"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.98, 0.95, 0.75, 1)
+text = "Tafjur"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow8"]
+layout_mode = 2
+
+[node name="LocationRow9" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow9"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "The Brink"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow9"]
+layout_mode = 2
+
+[node name="LocationRow10" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow10"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.75, 0.25, 0.75, 1)
+text = "The Chasm"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow10"]
+layout_mode = 2
+
+[node name="LocationRow11" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow11"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "The Grinder"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow11"]
+layout_mode = 2
+
+[node name="LocationRow12" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow12"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0, 0.5, 1)
+text = "Вихрь-86"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow12"]
+layout_mode = 2
+
+[node name="LocationRow13" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow13"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+text = "Врата \"Дельтас\""
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow13"]
+layout_mode = 2
+
+[node name="LocationRow14" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow14"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "Врата \"Тигр\""
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow14"]
+layout_mode = 2
+
+[node name="LocationRow15" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow15"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+text = "Врата \"Экспедиор\""
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow15"]
+layout_mode = 2
+
+[node name="LocationRow16" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow16"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Доравин V"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow16"]
+layout_mode = 2
+
+[node name="LocationRow17" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow17"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+text = "Кемплар II"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow17"]
+layout_mode = 2
+
+[node name="LocationRow18" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow18"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.65, 0, 1)
+text = "Красное ущелье"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow18"]
+layout_mode = 2
+
+[node name="LocationRow19" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow19"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+text = "Креллер IV"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow19"]
+layout_mode = 2
+
+[node name="LocationRow20" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow20"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+text = "Крепость"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow20"]
+layout_mode = 2
+
+[node name="LocationRow21" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow21"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Лазурь"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow21"]
+layout_mode = 2
+
+[node name="LocationRow22" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow22"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "Логово Контрабандистов"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow22"]
+layout_mode = 2
+
+[node name="LocationRow23" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow23"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+text = "Лунария"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow23"]
+layout_mode = 2
+
+[node name="LocationRow24" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow24"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Нео-Дамаск"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow24"]
+layout_mode = 2
+
+[node name="LocationRow25" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow25"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0, 0.5, 1)
+text = "Нижняя Облачность"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow25"]
+layout_mode = 2
+
+[node name="LocationRow26" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow26"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.5, 0, 0.5, 1)
+text = "Огненная Лошадь"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow26"]
+layout_mode = 2
+
+[node name="LocationRow27" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow27"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "Острог"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow27"]
+layout_mode = 2
+
+[node name="LocationRow28" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow28"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.65, 0, 1)
+text = "ТК-421"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow28"]
+layout_mode = 2
+
+[node name="LocationRow29" type="HBoxContainer" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow29"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.65, 0, 1)
+text = "Форпост-338"
+
+[node name="CheckBox" type="CheckBox" parent="ScrollContainer/screen_slider/locations_menu/MarginContainer/LocationsScrollContainer/VBoxContainer/LocationRow29"]
+layout_mode = 2
+
+[connection signal="scroll_ended" from="ScrollContainer" to="." method="_on_scroll_container_scroll_ended"]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://3nscu7rshq1b"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_2mkc8"]
+
+[node name="mission" instance=ExtResource("1_2mkc8")]
+
+[node name="HSeparator3" parent="Panel/MarginContainer/VBoxContainer" index="8"]
+visible = false
+
+[node name="AdditionalAction" parent="Panel/MarginContainer/VBoxContainer" index="11"]
+visible = false

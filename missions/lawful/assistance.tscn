@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceappndbxelj2"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_ja0ur"]
+
+[node name="mission" instance=ExtResource("1_ja0ur")]
+
+[node name="MissionName" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" index="0"]
+text = "MISSION_NAME_ASSISTANCE"
+
+[node name="Action" parent="Panel/MarginContainer/VBoxContainer" index="5"]
+text = "ASSIST_ADD_ACTION"
+
+[node name="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer" index="7"]
+visible = false
+
+[node name="HSeparator3" parent="Panel/MarginContainer/VBoxContainer" index="8"]
+visible = false
+
+[node name="AdditionalAction" parent="Panel/MarginContainer/VBoxContainer" index="11"]
+text = "ASSIST_REWARD_SUCCESS"
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="0"]
+visible = false
+
+[node name="Option1" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="1"]
+visible = false
+
+[node name="Option2" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="2"]
+visible = false
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option3" index="0"]
+text = "MISSION_SUCCESS"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2/Option3" index="1"]
+text = "ASSIST_REWARD_SUCCESS"
+
+[node name="Option4" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer2" index="4"]
+visible = false

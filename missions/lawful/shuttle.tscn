@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgkdofo36xpmm"]
+
+[ext_resource type="PackedScene" uid="uid://bcu81xupcn363" path="res://missions/lawful/base_lawful_mission.tscn" id="1_n61bi"]
+
+[node name="mission" instance=ExtResource("1_n61bi")]
+
+[node name="MissionName" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" index="0"]
+theme_override_font_sizes/font_size = 20
+text = "MISSION_NAME_SHUTTLE"
+
+[node name="Trigger" parent="Panel/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer2" index="0"]
+text = "ACTION_BOARD"
+
+[node name="Indent" parent="Panel/MarginContainer/VBoxContainer" index="4"]
+custom_minimum_size = Vector2(0, 5)
+
+[node name="Action" parent="Panel/MarginContainer/VBoxContainer" index="5"]
+visible = false
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="0"]
+text = "SHUTTLE_REWARD_DESC"
+
+[node name="Option1" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="1"]
+visible = false
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option1" index="0"]
+text = "1-2 sectors"
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="0"]
+text = "1-2 sectors"
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="0"]
+text = "3-4 sectors"
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="0"]
+text = "5-6 sectors"
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="2"]
+text = "4000 cR"
+
+[node name="AdditionalAction" parent="Panel/MarginContainer/VBoxContainer" index="11"]
+visible = false

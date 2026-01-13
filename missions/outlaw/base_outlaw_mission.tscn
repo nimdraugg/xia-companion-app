@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3a8ma005cmgn"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_ws3y3"]
+[ext_resource type="Theme" uid="uid://cxw3ubyco26mb" path="res://themes/lawful/outlaw_theme.tres" id="2_tan0r"]
+[ext_resource type="StyleBox" uid="uid://ii4s766g7d5c" path="res://themes/lawful/outlaw_description.tres" id="3_0utfo"]
+[ext_resource type="StyleBox" uid="uid://dmwy46gcspnb8" path="res://themes/lawful/outlaw_light.tres" id="4_k3sug"]
+
+[node name="mission" instance=ExtResource("1_ws3y3")]
+
+[node name="Panel" parent="." index="0"]
+theme = ExtResource("2_tan0r")
+
+[node name="MissionDescription" parent="Panel/MarginContainer/VBoxContainer" index="2"]
+theme_override_styles/normal = ExtResource("3_0utfo")
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="0"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option1" index="1"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option1" index="2"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="1"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="2"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="1"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="2"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="1"]
+theme_override_styles/normal = ExtResource("4_k3sug")
+
+[node name="Reward" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="2"]
+theme_override_styles/normal = ExtResource("4_k3sug")

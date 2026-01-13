@@ -1,0 +1,20 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cxw3ubyco26mb"]
+
+[ext_resource type="StyleBox" uid="uid://er7b6sw0j3aa" path="res://themes/lawful/lawful_base.tres" id="1_y4yim"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_7wqjb"]
+color = Color(0.62021697, 0.28663886, 0.3431702, 1)
+grow_begin = 5.0
+grow_end = 5.0
+thickness = 6
+
+[resource]
+HSeparator/styles/separator = SubResource("StyleBoxLine_7wqjb")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 14
+MarginContainer/constants/margin_bottom = 5
+MarginContainer/constants/margin_left = 5
+MarginContainer/constants/margin_right = 5
+MarginContainer/constants/margin_top = 5
+PanelContainer/styles/panel = ExtResource("1_y4yim")
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)

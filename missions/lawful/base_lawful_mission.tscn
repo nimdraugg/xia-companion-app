@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcu81xupcn363"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_hlcha"]
+
+[node name="mission" instance=ExtResource("1_hlcha")]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwjs2r87yxeih"]
+
+[ext_resource type="PackedScene" uid="uid://ba3eqymne086k" path="res://missions/base_mission.tscn" id="1_a5v1n"]
+
+[node name="mission" instance=ExtResource("1_a5v1n")]
+
+[node name="MissionName" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" index="0"]
+text = "MISSION_NAME_BOUNTY_HUNTER"
+
+[node name="Action" parent="Panel/MarginContainer/VBoxContainer" index="5"]
+text = "BOUNTY_HUNTER_ADD_ACTION"
+
+[node name="RewardDesc" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="0"]
+text = "BOUNTY_HUNTER_REWARD_DESC"
+
+[node name="Option1" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer" index="1"]
+visible = false
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="0"]
+text = "1-7"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option2" index="1"]
+text = "BOUNTY_HUNTER_WRECK_BAD"
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="0"]
+text = "8-14"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option3" index="1"]
+text = "BOUNTY_HUNTER_WRECK_MID"
+
+[node name="Option" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="0"]
+text = "15-20"
+
+[node name="Additional" parent="Panel/MarginContainer/VBoxContainer/VBoxContainer/Option4" index="1"]
+text = "BOUNTY_HUNTER_WRECK_GOOD"
+
+[node name="AdditionalAction" parent="Panel/MarginContainer/VBoxContainer" index="11"]
+visible = false
