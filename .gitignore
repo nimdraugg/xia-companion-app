@@ -1,3 +1,16 @@
-# Godot 4+ specific ignores
+
 .godot/
 /android/
+.nomedia
+export.cfg
+export_credentials.cfg
+*.translation
+.mono/
+data_*/
+mono_crash.*.json
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+.nfs*
